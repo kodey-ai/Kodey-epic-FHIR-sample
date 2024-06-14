@@ -1,17 +1,20 @@
 import express from 'express';
 import axios from 'axios';
 import dotenv from 'dotenv';
+import { getOAuthToken } from './utils';
 
 dotenv.config();
 
 const app = express();
 
 app.get('/allergy_intolerance_search', async (req, res) => {
-    const { patient, clinicalStatus } = req.query;
+    const token = await getOAuthToken();
+    const patientId = req.query.patientId;
+    const clinicalStatus = req.query.clinicalStatus;
     try {
-        const response = await axios.get(`${process.env.FHIR_BASE_URL}/allergyintolerance?patient=${patient}&clinical-status=${clinicalStatus}`, {
+        const response = await axios.get(`${process.env.FHIR_BASE_URL}/allergyintolerance?patient=${patientId}&clinical-status=${clinicalStatus}`, {
             headers: {
-                'Authorization': `Bearer ${process.env.FHIR_API_TOKEN}`,
+                'Authorization': `Bearer ${token}`,
                 'Content-Type': 'application/fhir+json'
             }
         });
