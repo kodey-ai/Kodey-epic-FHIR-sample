@@ -35,7 +35,7 @@ In this sample, we will explore how Kodey.ai can create express typescript api t
 
     step 2: Using knowledge base tool, Understand how to make request to the AllergyIntolerance.Search (R4) api endpoint , what are the parameters, headers, etc required to make the api call.
 
-    step 3: Now create the express typescript app hat will actually run the server and expose an endpoint allergy_intolerance_search which when requested makes call the above mentioned external api to get the data. Make sure to read any credentials from env variables if required. Use axios library to make the request internally to the endpoint.
+    step 3: Now create the express typescript app that will actually run the server and expose an endpoint allergy_intolerance_search which when requested makes call the above mentioned external api to get the data. Make sure to read any credentials from env variables if required. Use axios library to make the request internally to the endpoint.
     Make sure to write properly formatted typescript code which is optimized and syntactically correct.
 
     step 4: Also in the same file as above, create a simple /index endpoint which returns "hello world" as response.
