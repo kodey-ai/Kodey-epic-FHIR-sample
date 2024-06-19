@@ -1,4 +1,4 @@
-# kodey-selenium-sample
+# kodey-epic-FHIR-sample
 
 This repository is an example Kodey.ai Coding Agent Workflow
 
