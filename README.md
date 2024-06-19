@@ -35,22 +35,23 @@ In this sample, we will explore how Kodey.ai can create express typescript api t
 
     step 2: Using knowledge base tool, Understand how to make request to the AllergyIntolerance.Search (R4) api endpoint , what are the parameters, headers, etc required to make the api call.
 
-    step 3: Now create the express typescript app that will actually run the server and expose an endpoint allergy_intolerance_search which when requested makes call the above mentioned external api to get the data. Make sure to read any credentials from env variables if required. Use axios library to make the request internally to the endpoint.
-    Make sure to write properly formatted typescript code which is optimized and syntactically correct.
+    step 3: Create the utils.ts file which will have a function that returns the access token required to call the api. This function will be used later on which will give token to us.
 
-    step 4: Also in the same file as above, create a simple /index endpoint which returns "hello world" as response.
+    step 4: Now create the express typescript app that will actually run the server and expose an endpoint allergy_intolerance_search which when requested makes call the above mentioned external api to get the data. Use axios library to make the request internally to the endpoint. Write properly formatted typescript code which is optimized and syntactically correct. FYI: Read the host url if needed from env variables. And import the function from utils to get the access token and use that in header.
 
-    step 5: Create package.json file which should include all the dependencies required . For your information use ts-node 10.9.2.
+    step 5: Also in the same file as above, create a simple /index endpoint which returns "hello world" as response.
 
-    step 6: Create tsconfig.js file with all necessary required configurations.
+    step 6: Create package.json file which should include all the dependencies required . For your information use ts-node 10.9.2.
 
-    step 7: Also create .gitignore file which will include the node_modules, env files and others.
+    step 7: Create tsconfig.js file with all necessary required configurations.
 
-    step 7: Update the readme file to include the detail about the app and also instruction on how to run the app.
+    step 8: Also create .gitignore file which will include the node_modules, env files and others.
 
-    step 8: Create a new pull request from the above created branch with title "EPIC FHIR ALLERGY INTOLERANCE SEARCH".
+    step 9: Update the readme file to include the detail about the app and also instruction on how to run the app.
 
-    step 9: Update this issue to closed status
+    step 10: Create a new pull request from the above created branch with title "EPIC FHIR ALLERGY INTOLERANCE SEARCH".
+
+    step 11: Update this issue to closed status
 ```
 
 ## Once you have set the description of the issue in your relavant system. You need to use kodey UI Chat and execute below statement to get the work done. 
