@@ -18,7 +18,9 @@ In this sample, we will explore how Kodey.ai can create express typescript api t
 
 ### SAMPLE PROMPT - EPIC FHIR AllergyIntolerance.Search(R4) API Sample
 ```
-    platform: github | bitbucket | azure | gitlab (choose one of these)
+      platform: github | bitbucket | azure | gitlab (choose one of these)
+
+      project-to-work-on: Kodey-epic-FHIR-sample (ONLY IF AZURE)
     
       repository-to-work-on: Kodey-epic-FHIR-sample
     
